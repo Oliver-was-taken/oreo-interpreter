@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://upload.wikimedia.org/wikipedia/de/thumb/d/dd/Logo_Oreo.svg/500px-Logo_Oreo.svg.png"/>
+    <img src="https://media4.giphy.com/media/J1RS4OylyNTTCmj8ek/giphy.gif?cid=ecf05e47vmazx3cwa9jng8xfztw1wkx1pz2cci1vwqx3jyg2&rid=giphy.gif&ct=g"/>
 </div>
 
 # OREO INTERPRETER 🍪

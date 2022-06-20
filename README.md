@@ -45,11 +45,31 @@ For more details look at this beautiful image:
 <table>
     <tr>
         <td>
-            OREO-Esolang created by
+            OREO created by
         </td>
         <td>
             <a href="https://esolangs.org/wiki/User:Kamish">
                 Kamish
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            COW created by
+        </td>
+        <td>
+            <a href="https://github.com/BigZaphod/">
+                BigZaphod
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Brainfuck created by
+        </td>
+        <td>
+            <a href="https://esolangs.org/wiki/Urban_M%C3%BCller">
+                Urban Müller
             </a>
         </td>
     </tr>

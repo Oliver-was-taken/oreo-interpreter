@@ -1,8 +1,10 @@
+package interpreter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * In the first step, the ingredients go into the FactoryStation
+ * In the first step, the ingredients go into the interpreter.FactoryStation
  * <p>
  * Here the ingredients are processed to the main parts of an oreo (Dough and Cream)
  * But to do this the ingredients first must be checked for any flaws.
@@ -18,6 +20,19 @@ public class FactoryStation {
      * @param ingredients - ingredients delivered by user
      * @return produced dough and creme
      */
+
+
+    public List<Integer> processIngredients(String ingredients) {
+        // Give the ingredients into the factory for further processing
+        FactoryStation factoryStation = new FactoryStation();
+        List<String> processedIngredients = factoryStation.checkIngredients(ingredients);
+
+        //Process approved ingredients to a OREO
+        AssembleStation assembleStation = new AssembleStation();
+
+        return assembleStation.assembleCookie(processedIngredients);
+    }
+
     public List<String> checkIngredients(String ingredients) {
         List<String> approvedIngredients = new ArrayList<>();
         for (int index = 0; index < ingredients.length(); index++) {

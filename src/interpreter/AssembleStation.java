@@ -1,8 +1,10 @@
+package interpreter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * In the AssembleStation all produced end-ingredients get assembled
+ * In the interpreter.AssembleStation all produced end-ingredients get assembled
  * (Assemblers have a good payment and are over 18 of course)
  **/
 public class AssembleStation {
@@ -12,7 +14,7 @@ public class AssembleStation {
      *
      * @param processedIngredients - End-Ingredients for assembling of oreos
      **/
-    public void assembleCookie(List<String> processedIngredients) {
+    public List<Integer> assembleCookie(List<String> processedIngredients) {
         // assembled cookie
         List<Integer> assembledCookie = new ArrayList<Integer>();
 
@@ -33,7 +35,7 @@ public class AssembleStation {
                 case "&O" -> {
                     try {
                         assembledCookie.set(pointerIndex, accumulator);
-                    }catch (IndexOutOfBoundsException e){
+                    } catch (IndexOutOfBoundsException e){
                         assembledCookie.add(accumulator);
                     }
 
@@ -43,6 +45,8 @@ public class AssembleStation {
         }
         CookieShop cookieShop = new CookieShop();
         cookieShop.displayCookie(assembledCookie);
+
+        return assembledCookie;
     }
 
 }
